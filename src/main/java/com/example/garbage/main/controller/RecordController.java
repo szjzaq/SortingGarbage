@@ -1,17 +1,13 @@
-package com.example.hardwarerank.main.controller;
+package com.example.garbage.main.controller;
 
 
 
-import com.example.hardwarerank.main.entity.RecordData;
-import com.example.hardwarerank.main.service.RecordService;
+import com.example.garbage.main.entity.RecordData;
+import com.example.garbage.main.service.RecordService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import javax.websocket.server.PathParam;
-import javax.xml.crypto.Data;
-import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.logging.SimpleFormatter;
 
 @RestController
 @RequestMapping("/record")
@@ -29,7 +25,6 @@ public class RecordController {
     @ResponseBody
     @RequestMapping("/addRecord/{weight}")
     public String insertRecord(@PathVariable String weight){
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();
 
         RecordData recordData = new RecordData();

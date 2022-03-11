@@ -1,4 +1,4 @@
-package com.example.hardwarerank.main.entity;
+package com.example.garbage.main.entity;
 
 import java.util.Date;
 

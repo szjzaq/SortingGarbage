@@ -3,14 +3,14 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.example.hardwarerank.main.dao.RecordDataDao">
+<mapper namespace="com.example.garbage.main.dao.RecordDataDao">
 
-    <insert id="addRecord" parameterType="com.example.hardwarerank.main.entity.RecordData">
+    <insert id="addRecord" parameterType="com.example.garbage.main.entity.RecordData">
         insert into record(weight, date)
         values (#{weight}, #{date})
     </insert>
 
-    <select id="selectedAllRecords" parameterType="String" resultType="com.example.hardwarerank.main.entity.RecordData">
+    <select id="selectedAllRecords" parameterType="String" resultType="com.example.garbage.main.entity.RecordData">
         select *
         from record
     </select>

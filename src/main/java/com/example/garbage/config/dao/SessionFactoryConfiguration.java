@@ -1,4 +1,4 @@
-package com.example.hardwarerank.config.dao;
+package com.example.garbage.config.dao;
 
 
 import org.mybatis.spring.SqlSessionFactoryBean;

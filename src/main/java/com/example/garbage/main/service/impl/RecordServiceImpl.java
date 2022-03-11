@@ -1,8 +1,8 @@
-package com.example.hardwarerank.main.service.impl;
+package com.example.garbage.main.service.impl;
 
-import com.example.hardwarerank.main.dao.RecordDataDao;
-import com.example.hardwarerank.main.entity.RecordData;
-import com.example.hardwarerank.main.service.RecordService;
+import com.example.garbage.main.dao.RecordDataDao;
+import com.example.garbage.main.entity.RecordData;
+import com.example.garbage.main.service.RecordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

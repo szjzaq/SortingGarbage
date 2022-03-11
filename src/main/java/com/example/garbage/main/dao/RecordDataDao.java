@@ -1,6 +1,6 @@
-package com.example.hardwarerank.main.dao;
+package com.example.garbage.main.dao;
 
-import com.example.hardwarerank.main.entity.RecordData;
+import com.example.garbage.main.entity.RecordData;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

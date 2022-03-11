@@ -1,4 +1,4 @@
-package com.example.hardwarerank.config.dao;
+package com.example.garbage.config.dao;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.mybatis.spring.annotation.MapperScan;

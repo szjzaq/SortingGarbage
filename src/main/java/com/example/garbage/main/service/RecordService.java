@@ -1,8 +1,7 @@
-package com.example.hardwarerank.main.service;
+package com.example.garbage.main.service;
 
-import com.example.hardwarerank.main.entity.RecordData;
+import com.example.garbage.main.entity.RecordData;
 
-import java.util.List;
 import java.util.Map;
 
 public interface RecordService {
