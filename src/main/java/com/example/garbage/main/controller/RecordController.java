@@ -19,6 +19,7 @@ public class RecordController {
 
     @GetMapping("/getWeight")
     public Map<String,Integer> getAllRecords(){
+        System.out.println(11111111);
         return recordService.getRecordList();
     }
 
@@ -26,6 +27,7 @@ public class RecordController {
     @RequestMapping("/addRecord/{weight}")
     public String insertRecord(@PathVariable String weight){
         Date date = new Date();
+
 
         RecordData recordData = new RecordData();
         recordData.setWeight(Integer.parseInt(weight));

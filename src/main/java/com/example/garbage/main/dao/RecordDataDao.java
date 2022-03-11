@@ -7,7 +7,6 @@ import java.util.List;
 
 @Mapper
 public interface RecordDataDao {
-
     List<RecordData> selectedAllRecords();
 
     void addRecord(RecordData record);
