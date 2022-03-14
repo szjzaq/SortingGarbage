@@ -8,6 +8,10 @@ import org.springframework.context.annotation.Configuration;
 
 import java.beans.PropertyVetoException;
 
+
+/**
+ * JDBC SETTING
+ */
 @Configuration
 @MapperScan("com.example.garbage.main.dao")
 public class DataSourceConfiguration {
@@ -24,15 +28,15 @@ public class DataSourceConfiguration {
     @Bean(name = "dataSource")
     public ComboPooledDataSource createDataSource() throws PropertyVetoException {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
-        //设置驱动
+        //Set driver
         dataSource.setDriverClass(jdbcDriver);
-        //设置url
+        //set url
         dataSource.setJdbcUrl(jdbcUrl);
-        //设置用户名
+        //set user
         dataSource.setUser(jdbcUser);
-        //设置密码
+        //set password
         dataSource.setPassword(jdbcPassword);
-        //设置连接池关闭后是否自动提交,否
+        //set AutoCommit
         dataSource.setAutoCommitOnClose(false);
         return dataSource;
     }

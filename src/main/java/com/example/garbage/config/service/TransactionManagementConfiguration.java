@@ -9,8 +9,11 @@ import org.springframework.transaction.annotation.TransactionManagementConfigure
 
 import javax.sql.DataSource;
 
+
+/**
+ * Open TransactionManagement
+ */
 @Configuration
-//开启事物管理
 @EnableTransactionManagement
 public class TransactionManagementConfiguration implements TransactionManagementConfigurer {
     @Autowired

@@ -26,7 +26,10 @@ public class SessionFactoryConfiguration {
     private String entityPackage;
 
 
-    //dataSource 和 mybatis绑定在一起,创建子事物的sectionFactory,因此加载时候需要加载出一个bean
+    /**
+     * Bind dataSource and mybatis,and create sectionFactory
+     * @return SqlSessionFactoryBean
+     */
     @Bean(name = "sqlSessionFactory")
     public SqlSessionFactoryBean createSqlSessionFactory() throws IOException {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
